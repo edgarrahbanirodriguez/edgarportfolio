@@ -1,0 +1,233 @@
+/* Add a black background color to the top navigation */
+.header {
+  display: flex;
+  justify-content: space-between;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
+.name {
+  display: flex;
+}
+
+.topnav {
+  display: flex;
+  background-color: #333;
+  justify-content: space-between;
+  list-style: none;
+  align-items: center;
+  margin-right: 25px;
+
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  text-decoration: none;
+  display: flex;
+  margin-right: 25px;
+  color: white;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  color: bisque;
+  box-shadow: -10px 10px 28px black;
+  background-color: black;
+  border-radius: 18px;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  /* background-color: #04AA6D;
+  color: white; */
+}
+
+body, html {
+  height: 100%;
+  background-color: #333;
+  color: white;
+  font-family: sans-serif;
+  font-size: large;
+}
+
+
+
+/* The hero image */
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Images/coder.jpg");
+
+
+  height: 50%;
+
+ 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+h1 {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.aboutMe {
+  display: flex;
+  flex-direction: column;
+
+  border: 1px solid black;
+}
+
+.aboutMeContainer {
+  display: flex;
+}
+
+.aboutMeImage {
+  display: flex;
+  width: 50%;
+}
+
+.aboutMeImage img {
+  border-radius: 100%;
+  border: 5px solid black;
+
+}
+
+.aboutMeText {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  width: 50%;
+
+}
+
+.aboutMe {
+  display: flex;
+  flex-direction: column;
+
+  border: 1px solid black;
+}
+
+.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+.myworkcontainer1{
+
+  font-size: 20px;
+  padding: 10px;
+  border: 1px solid lightgray;
+  margin: 10px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Images/surf.webp");
+  
+}
+.myworkcontainer2{
+
+  font-size: 20px;
+  padding: 10px;
+  border: 1px solid lightgray;
+  margin: 10px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Images/led\ wall.webp");
+
+}
+.myworkcontainer3{
+
+  font-size: 20px;
+  padding: 10px;
+  border: 1px solid lightgray;
+  margin: 10px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Images/calcu.jpg");
+
+}
+.myworkcontainer4{
+
+  font-size: 20px;
+  padding: 10px;
+  border: 1px solid lightgray;
+  margin: 10px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Images/Jigsaw_puzzle_01_by_Scouten.webp")
+
+}
+.myworkcontainer5{
+
+  font-size: 20px;
+  padding: 10px;
+  border: 1px solid lightgray;
+  margin: 10px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Images/running.jpg")
+
+}
+
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid black;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: black;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  padding: 10px;
+}
+
+
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
